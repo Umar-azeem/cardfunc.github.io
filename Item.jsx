@@ -1,42 +1,23 @@
-export const Item () {
-    const [card, setCard] = useState({
-        names: "Ring 2in1",
-        namess: "Ring Baring",
-        namesss: "Ring 2in1 + Bracelet",
-        price: "price",
-        rs: "250",
-        rss: "250",
-        rsss: "250",
-        item: "items",
-        total: "Total-Price",
-      });
-      const [value1, setvalue1] = useState(0);
-      const [value2, setvalue2] = useState(0);
-      function value1Add() {
-        setvalue1((value1) => value1 + 1);
-      }
-      function value2Add() {
-        setvalue2((value2) => value2 + 250);
-      }
-      const [value3, setvalue3] = useState(0);
-      const [value4, setvalue4] = useState(0);
-      function value3Add() {
-        setvalue3((value3) => value3 + 1);
-      }
-      function value4Add() {
-        setvalue4((value4) => value4 + 250);
-      }
-      const [value5, setvalue5] = useState(0);
-      const [value6, setvalue6] = useState(0);
-      function value5Add() {
-        setvalue5((value5) => value5 + 1);
-      }
-      function value6Add() {
-        setvalue6((value6) => value6 + 250);
-      }
-    return(
-<div>
-
-</div>
-    );
+import { Carousel } from "@material-tailwind/react";
+ 
+export function CarouselDefault() {
+  return (
+    <Carousel className="rounded-xl">
+      <img
+        src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2560&q=80"
+        alt="image 1"
+        className="h-full w-full object-cover"
+      />
+      <img
+        src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
+        alt="image 2"
+        className="h-full w-full object-cover"
+      />
+      <img
+        src="https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2762&q=80"
+        alt="image 3"
+        className="h-full w-full object-cover"
+      />
+    </Carousel>
+  );
 }
